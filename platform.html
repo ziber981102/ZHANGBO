@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="short icon" href="Resource/icon.png">
+    <title>华杉科技实训项目</title>
+    <script type="text/javascript" src="commonclass.js"></script>
+    <link rel="stylesheet" type="text/css" href="styss.css">
+    <style>
+    article{
+        margin: 20px;
+    }
+        h3{
+            color: red;
+            font-size: 28px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid silver;
+        }
+    h4{
+        font-size: 20px;
+    }
+        article p{
+            font-size: 18px;
+            text-indent: 2em;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!--搬少量文字的标签-->
+    <span>平台风采</span>
+</header>
+
+<section class="section1">
+    <!--加载图片的标签。alter提示-->
+    <img src="Resource/banner4.png" alt="">
+</section>
+
+<article>
+    <h3 id="title"></h3>
+
+    <h4 id="subTitle"> </h4>
+    <p id="info"> </p>
+
+
+
+</article>
+<script>
+    /*var xhr = new XMLHttpRequest();
+    xhr.open('get','https://mockapi.eolinker.com/2ZhGVxjacb39010e6753bd9c02ee803e6e3bfeab6e8007c/aboutus');
+    xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+    xhr.send();
+    xhr.onreadystatechange=function () {
+        if(xhr.readyState ==4&&xhr.status==200){
+            var res= JSON.parse(xhr.responseText);
+
+            var title=document.getElementById("title");
+            var subtitle=document.getElementById("subTitle");
+            var infon1=document.getElementById("info");
+        title.innerHTML =res.data.title;
+        subtitle.innerHTML=res.data.subTitle;
+        infon1.innerHTML=res.data.info;
+        }
+
+    }*/
+
+   RequsetMethod('get','aboutus','',function (returnstr) {
+       var title=document.getElementById("title");
+       var subtitle=document.getElementById("subTitle");
+       var infon1=document.getElementById("info");
+       title.innerHTML =returnstr.title;
+       subtitle.innerHTML=returnstr.subTitle;
+       infon1.innerHTML=returnstr.info;
+   });
+
+</script>
+<footer>
+    <a href="DropleService.html"><img src="Resource/nav10.png" alt=""><span>小滴服务</span></a>
+    <a href="one.html"><img src="Resource/nav20.png" alt=""><span>项目企业</span></a>
+    <a href="ServiceProcess.html"><img src="Resource/nav30.png" alt=""><span>服务流程</span></a>
+    <a href="platform.html"><img src="Resource/nav41.png" alt=""><span class="span1">平台风格</span></a>
+    <a href="MyDrople.html"><img src="Resource/nav50.png" alt=""><span>我的小滴</span></a>
+</footer>
+</body>
+</html>

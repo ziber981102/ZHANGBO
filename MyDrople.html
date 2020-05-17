@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="short icon" href="Resource/icon.png">
+    <title>华杉科技实训项目</title>
+    <link rel="stylesheet" type="text/css" href="styss.css">
+    <script type="text/javascript" src="js.js"></script>
+    <style>
+        .myimg{
+            width: 100%;
+        }
+        .myextrnal_div{
+            position: relative;
+        }
+        .innerdiv{
+            left: 50%;
+            top: 50%;
+            width: 66px;
+            height: 120px;
+            margin-left: -33px;
+            margin-top: -60px;
+            position: absolute;
+        }
+    .innerdiv button{
+        background-color: rgb(32,131,204);
+        width: 66px;
+        height: 20px;
+
+    }
+
+    .innerdiv span{
+        display: block;
+    }
+
+        .div1{
+            border: 2px solid rgb(212,212,212);
+            width: 90%;
+            height: 40px;
+           
+            margin-left: 18px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: larger;
+        }
+        .img1{
+            position:absolute;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+    .div2{
+        position: relative;
+         margin-left: 20%;
+        margin-top: 10px;
+    }
+.div2 img{
+    float: right;
+    padding-right: 5px;
+}
+        .s1{
+
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!--搬少量文字的标签-->
+    <span class="s1">我的小滴</span>
+</header>
+
+<div class="myextrnal_div">
+    <img src="Resource/banner5.png" alt="" class="myimg">
+    <div class="innerdiv">
+        <img src="Resource/head.png">
+   <span id="ulnae" class="sp1"></span>
+        <script>
+            document.getElementById("ulnae").innerHTML=window.localStorage.getItem("account");
+        </script>
+        <button onclick="exit1()">退出登录</button>
+    </div>
+
+</div>
+<div class="div1">
+    <img src="Resource/gr_1.png" class="img1">
+    <div class="div2">
+        我的客户
+    <img src="Resource/jt.png">
+    </div>
+</div>
+
+
+
+<div class="div1">
+    <img src="Resource/gr_2.png" class="img1">
+    <div class="div2">
+        我的钱包
+        <img src="Resource/jt.png">
+    </div>
+</div>
+<div class="div1">
+    <img src="Resource/gr_3.png" class="img1">
+    <div class="div2">
+        我的反馈
+        <img src="Resource/jt.png">
+    </div>
+</div><div class="div1">
+    <img src="Resource/gr_4.png" class="img1">
+    <div class="div2">
+        密码修改
+        <img src="Resource/jt.png">
+    </div>
+</div>
+
+<footer>
+    <a href="DropleService.html"><img src="Resource/nav10.png" alt=""><span>小滴服务</span></a>
+    <a href="one.html"><img src="Resource/nav20.png" alt=""><span>项目企业</span></a>
+    <a href="ServiceProcess.html"><img src="Resource/nav30.png" alt=""><span>服务流程</span></a>
+    <a href="platform.html"><img src="Resource/nav40.png" alt=""><span>平台风格</span></a>
+    <a href="MyDrople.html"><img src="Resource/nav51.png" alt=""><span>我的小滴</span></a>
+</footer>
+</body>
+</html>

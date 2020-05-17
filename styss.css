@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(244,244,247);
+    padding-top: 44px;
+    padding-bottom: 50px;
+
+}
+header{
+    background: rgb(40,133,202);
+    color: white;
+    /*居中*/
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+    /*定位*/
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    position: fixed;
+}
+footer image{
+    width: 18px;
+}
+
+footer {
+    display: table;
+    width: 100%;
+    background: black;
+    height: 49px;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    display: table-cell;
+    /*几列*/
+    width:20%;
+    text-align: center;
+    vertical-align: middle;
+}
+footer a span{
+    display: block;
+}
+
+.span1{
+    color: red;
+}
+.section1 img{
+    width: 100%;
+    margin-bottom: -6px;
+
+}
+.section2{
+
+    background: rgb(244,244,247);
+
+}
+.section2 ul {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+   margin-top: 20px;
+}
+.section2 ul li {
+    display: table-cell;
+    width: 33.3%;
+    text-align: center;
+/*竖直居中*/
+ vertical-align: middle;
+}
+.section2 a{
+    text-decoration: none;
+}
+.section2 a span{
+  color: black;
+    font-size: 18px;
+}
+.sp1{
+text-align: center;
+
+}
+/*
+定位确定元素的位置  x，y
+确定元素的宽高
+加个螺丝钉
+
+*/
+
+/*
+ ul{
+            display: table;
+            width: 100%;
+            background: white;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        ul li{
+            display: table-cell;
+            width: 33.3%;
+            text-align: center;
+            /*竖直居中*/
+/*     vertical-align: middle;
+}
+/*内联标签变成块级标签，独立成行*/
+/*ul li span{
+    display: block;
+}
+ */

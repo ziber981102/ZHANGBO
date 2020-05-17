@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="short icon" href="Resource/icon.png">
+    <title>华杉科技实训项目</title>
+    <script type="text/javascript" src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="styss.css">
+    <style>
+        .div3{
+            height: 180px;
+            width: 100%;
+            margin-bottom: 30px;
+            /*div内部居中*/
+            line-height:50px;
+            text-align:center;
+            display:table;
+            margin-top: 50px;
+
+        }
+        .div3 img{
+            width: 130px;
+
+        }
+        .formdiv{
+            width: 100%;
+        }
+    .innerdiv{
+        width: 90%;
+        margin: 0 auto;
+       border: 1px solid #cccccc;
+        border-radius: 5px;
+        background-color: white;
+            height: 100px;
+    }
+    .indivdiv{
+        height: 50px;
+        border-bottom: 1px solid #cccccc;
+        font-size: 20px;
+        text-align: center;
+
+    }
+.indivdiv span{
+    margin: 0 auto;
+}
+  .indivdiv input{
+    outline: medium;
+}
+        button{
+            margin-top: 10px;
+            width: 90%;
+            height: 60px;
+            margin-left: 18px;
+            font-size: 30px;
+            color: white;
+            background-color: rgb(26,69,146);
+            border-radius: 5px;
+        }
+.div4{
+    padding-top: 10px;
+    font-size: larger;
+}
+        input{
+            border: none;
+            outline: medium;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!--搬少量文字的标签-->
+    <span >登录</span>
+</header>
+<div class="div3">
+    <img src="Resource/head.png" alt="">
+</div>
+
+<div class="formdiv">
+    <div class="innerdiv">
+        <div class="indivdiv">
+
+           <div class="div4">
+               <span>用户名:</span>
+            <input type="text" id="L_account"></div>
+        </div>
+
+        <div class="indivdiv">
+            <div class="div4"><span>密码：</span>
+            <input type="password" id="L_pwd"></div></div>
+    </div>
+</div>
+
+
+    <button onclick="ax()">登录</button>
+
+
+</body>
+</html>
